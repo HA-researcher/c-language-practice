@@ -19,13 +19,9 @@ int main(void){
 
 }
 float answerf(float a[5], float b[5]){
-	float *u[5];
-	float *v[5];
 	float answer=0;
 	for(int i=0; i<5; i++){
-		u[i]=&a[i];
-		v[i]=&b[i];
-		answer+=*u[i]**v[i];
+		answer+=*a[i]**b[i];
 	}
 	return answer;
 }
