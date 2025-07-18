@@ -21,7 +21,7 @@ int main(void){
 float answerf(float a[5], float b[5]){
 	float answer=0;
 	for(int i=0; i<5; i++){
-		answer+=*a[i]**b[i];
+		answer+=*(a+i)**(b+i);
 	}
 	return answer;
 }
