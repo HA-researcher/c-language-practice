@@ -4,7 +4,8 @@ void swap(int *a, int *b);
 int main(void){
 	int a=5;
 	int b=4;
-	printf("a=%d\nb=%d\n",swap(&a,&b));
+	swap(&a,&b);
+	printf("a=%d\nb=%d\n",a,b);
 }
 void swap(int *a, int *b){
 	int swapper;
